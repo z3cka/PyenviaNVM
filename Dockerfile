@@ -3,7 +3,7 @@ FROM z3cka/c9
 MAINTAINER Casey Grzecka <c@sey.gr>
 
 # Install Pyenv deps
-RUN apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+RUN apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl libcurl4-openssl-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
 
 # Install pyenv
 RUN curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
